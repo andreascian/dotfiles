@@ -13,6 +13,10 @@ nnoremap <silent> <Tab> :bn<CR>
 nnoremap <silent> <S-Tab> :bp<CR>
 nnoremap <silent> <F4> :bd<CR>
 
+" NERDTree
+" autoload NERDTree if started with no arguments
+autocmd vimenter * if !argc() | NERDTree | endif
+
 set hidden
 " always show line numbers
 set number
