@@ -1,4 +1,9 @@
 
+execute pathogen#infect()
+
+syntax on
+filetype plugin indent on
+
 " Taglist view tag sidebar with F8
 nnoremap <silent> <F8> :TlistToggle<CR>
 
