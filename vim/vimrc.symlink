@@ -1,4 +1,6 @@
 
+set nocompatible
+
 execute pathogen#infect()
 
 syntax on
@@ -18,7 +20,49 @@ nnoremap <silent> <F2> :NERDTreeToggle<cr>
 " autoload NERDTree if started with no arguments
 autocmd vimenter * if !argc() | NERDTree | endif
 
+" *************
+" other shurcut
+" *************
+
+" allow fast command (e.g. ;w instead of :w)
+nnoremap ; :
+
+" hide buffers insted of closing
 set hidden
 " always show line numbers
 set number
+set autoindent    " always set autoindenting on
+set copyindent    " copy the previous indentation on autoindenting
+
+set showmatch     " set show matching parenthesis
+set ignorecase    " ignore case when searching
+set smartcase     " ignore case if search pattern is all lowercase,
+                  "    case-sensitive otherwise
+
+set smarttab      " insert tabs on the start of a line according to
+                  "    shiftwidth, not tabstop
+
+" our tab is 4 space width
+set tabstop=4
+set shiftwidth=4
+set hlsearch      " highlight search terms
+set incsearch     " show search matches as you type
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" set our custom unprintable characters format
+set listchars=tab:»»,trail:·,extends:#,nbsp:·,eol:¶
+" don't enable this by default
+" set list
+
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+
+" no need for backup files
+set nobackup
 
