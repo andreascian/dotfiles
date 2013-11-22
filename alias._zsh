@@ -6,3 +6,6 @@ alias la='ls -A'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
 
+export cores=$(cat /proc/cpuinfo | grep processor | wc -l)
+alias jmake='make -j $cores -l $cores'
+
