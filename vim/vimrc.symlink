@@ -26,6 +26,8 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " other shurcut
 " *************
 
+nnoremap <silent> <F7> :make<CR>
+
 " allow fast command (e.g. ;w instead of :w)
 nnoremap ; :
 
