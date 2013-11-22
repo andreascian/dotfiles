@@ -72,3 +72,14 @@ set noerrorbells         " don't beep
 " no need for backup files
 set nobackup
 
+" bookmark management (see .vim/plugin/vbookmark.vim)
+" configure where to save bookmark when closing vim
+let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
+" disable standard mapping
+let g:vbookmark_disableMapping = 1
+" and define our own custom mapping
+nnoremap <silent> <A-Down> :VbookmarkNext<CR>
+nnoremap <silent> <A-Up> :VbookmarkPrevious<CR>
+nnoremap <silent> <A-Left> :VbookmarkToggle<CR>
+nnoremap <silent> ma :VbookmarkClearAll<CR>
+
