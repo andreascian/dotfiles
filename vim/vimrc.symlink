@@ -5,6 +5,8 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
+" we commonly have a black/dark terminal
+set background=dark
 
 " Taglist view tag sidebar with F8
 nnoremap <silent> <F8> :TlistToggle<CR>
