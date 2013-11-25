@@ -6,3 +6,5 @@
 
 [oh-my-zsh]
 	hide-status = 1
+[core]
+	editor = vim
