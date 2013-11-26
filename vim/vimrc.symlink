@@ -50,6 +50,9 @@ set smarttab      " insert tabs on the start of a line according to
 set tabstop=4
 set shiftwidth=4
 set noexpandtab   " use real tab, no spaces
+" when indenting in visual mode, keep the same selection
+vnoremap > >gv
+vnoremap < <gv
 
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
