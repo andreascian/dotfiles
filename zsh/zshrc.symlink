@@ -19,6 +19,7 @@ ZSH_THEME="gnzh"
 
 # Uncomment to change how often before auto-updates occur? (in days)
 export UPDATE_ZSH_DAYS=1
+export DISABLE_UPDATE_PROMPT=true
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
