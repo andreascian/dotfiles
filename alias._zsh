@@ -9,3 +9,5 @@ alias ls='ls --color=auto'
 export cores=$(cat /proc/cpuinfo | grep processor | wc -l)
 alias jmake='make -j $cores -l $cores'
 
+alias gk='gitk --all -n 500'
+
