@@ -26,7 +26,11 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " other shurcut
 " *************
 
+" F7 as make command
 nnoremap <silent> <F7> :make<CR>
+
+" W as "sudo write"
+command W w !sudo tee % > /dev/null
 
 " open quickfix window when there are errors and close if none is found
 autocmd QuickFixCmdPost [^l]* nested cwindow
