@@ -79,6 +79,9 @@ set noerrorbells         " don't beep
 " no need for backup files
 set nobackup
 
+" disable swap files
+set noswapfile
+
 " bookmark management (see .vim/plugin/vbookmark.vim)
 " configure where to save bookmark when closing vim
 let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
