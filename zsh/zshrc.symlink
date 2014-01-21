@@ -57,7 +57,6 @@ fi
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*._zsh)
-config_files=${${config_files:#*/path._zsh}:#*/completion._zsh}
 
 # load the path files
 for file in ${(M)config_files:#*/path._zsh}
