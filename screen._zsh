@@ -1,0 +1,23 @@
+#!/bin/zsh
+
+export VARSLOC=/tmp/$USER.env
+
+function grabvars()
+{
+	VARS="SSH_AGENT_PID SSH_AUTH_SOCK DISPLAY"
+
+	#For each variable in $VARS
+	for x in $(echo $VARS) ; do
+	eval echo $x=\$$x | sed  's/=/="/
+		s/$/"/
+		s/^/export /'
+	done 1>$VARSLOC
+}
+  
+function sourcevars()
+{
+  if [[ -f $VARSLOC ]]; then
+ 	 source $VARSLOC
+  fi
+}
+

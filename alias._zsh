@@ -11,3 +11,5 @@ alias jmake='make -j $cores -l $cores'
 
 alias gk='gitk --all -n 500'
 
+alias screen='grabvars; screen'
+
