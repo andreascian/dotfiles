@@ -1,0 +1,1 @@
+caption always "%{= kc}%H (system load: %l)%{kw}%-w%{wr}%n %t%{-}%+w%{= kc}%-21=%{= .m}%D %d.%m.%Y %0c"
