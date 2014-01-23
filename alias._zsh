@@ -13,3 +13,6 @@ alias gk='gitk --all -n 500'
 
 alias screen='grabvars; screen'
 
+alias vi='TERM=xterm-sc vim'
+alias vim='TERM=xterm-sc vim'
+

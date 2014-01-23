@@ -1,0 +1,8 @@
+# specialized entry for Screen when started in an Xterm
+# adds support for ctrl-alt-left and right arrows
+screen.xterm|xterm-sc|GNU Screen inside Xterm,
+      kLFT5=\E[1;5D, kRIT5=\E[1;5C,
+      kLFT3=\E[1;3D, kRIT3=\E[1;3C,
+      kLFT7=\E[1;7D, kRIT7=\E[1;7C,
+      use=screen,
+

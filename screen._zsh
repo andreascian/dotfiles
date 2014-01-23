@@ -21,3 +21,9 @@ function sourcevars()
   fi
 }
 
+tic -x ~/.screen.xterm
+
+#exporting is uneeded because TERM is automatically
+#changed when screen is started
+#export TERM=screen.xterm
+
