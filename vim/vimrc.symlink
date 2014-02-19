@@ -19,6 +19,7 @@ nnoremap <silent> <F4> :bd<CR>
 
 " NERDTree
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
+nnoremap <silent> <F3> :NERDTreeFind<cr>
 " autoload NERDTree if started with no arguments
 autocmd vimenter * if !argc() | NERDTree | endif
 
