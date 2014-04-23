@@ -33,6 +33,17 @@ nnoremap <silent> <F7> :make<CR>
 " WW as "sudo write"
 command WW w !sudo tee % > /dev/null
 
+" CTRL-s as :w
+inoremap <C-s> <C-o>:w<CR>
+nnoremap <C-s> :w<CR>
+" CRTL-z as undo
+"inoremap <C-z> <C-o>:undo<CR>
+"nnoremap <C-z> :undo<CR>
+" CTRL-Z as redo
+"inoremap <C-Z> <C-o><C-R>
+"nnoremap <C-Z> <C-R>
+
+
 " open quickfix window when there are errors and close if none is found
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
