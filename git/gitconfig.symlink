@@ -8,3 +8,6 @@
 	hide-status = 1
 [core]
 	editor = vim
+
+[merge]
+	tool = vimdiff
