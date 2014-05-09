@@ -8,6 +8,10 @@ filetype plugin indent on
 " we commonly have a black/dark terminal
 set background=dark
 
+" PRU assembly syntax highlight
+au BufRead,BufNewFile *.p set filetype=pasm
+au BufRead,BufNewFile *.hp set filetype=pasm
+
 " Taglist view tag sidebar with F8
 nnoremap <silent> <F8> :TlistToggle<CR>
 
