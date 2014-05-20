@@ -82,3 +82,8 @@ done
 
 unset config_files
 
+if [ -e $ZSH/solarized/dircolors/dircolors ]
+then
+	eval $(dircolors $ZSH/solarized/dircolors/dircolors)
+fi
+
