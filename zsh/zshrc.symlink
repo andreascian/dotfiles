@@ -87,3 +87,4 @@ then
 	eval $(dircolors $ZSH/solarized/dircolors/dircolors)
 fi
 
+stty -f -ixon
