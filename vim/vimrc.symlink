@@ -13,6 +13,9 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 
+set mouse=a
+set ttymouse=xterm2
+
 
 " PRU assembly syntax highlight
 au BufRead,BufNewFile *.p set filetype=pasm
