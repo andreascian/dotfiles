@@ -9,8 +9,9 @@ alias ls='ls --color=auto'
 export cores=$(cat /proc/cpuinfo | grep processor | wc -l)
 alias jmake='make -j $cores -l $cores'
 
-gpo='git push origin'
-gpob='git push origin $(current_branch)'
+alias gpo='git push origin'
+alias gpob='git push origin $(current_branch)'
+alias grso='git remote show origin'
 alias gk='gitk --all -n 500'
 
 alias screen='grabvars; screen'
