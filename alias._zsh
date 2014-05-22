@@ -17,4 +17,6 @@ alias screen='grabvars; screen'
 
 alias vi='TERM=xterm-sc vim'
 alias vim='TERM=xterm-sc vim'
+alias vc='$ZSH/tools/vimpager/vimcat'
+alias vl='$ZSH/tools/vimpager/vimpager'
 
