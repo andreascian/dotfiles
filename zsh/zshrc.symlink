@@ -43,6 +43,8 @@ export DISABLE_UPDATE_PROMPT=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git screen git-extras git-flow-avh tmux command-not-found common-aliases wd)
 
+setopt HIST_IGNORE_SPACE
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
