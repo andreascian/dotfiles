@@ -128,3 +128,5 @@ highlight ColorColumn ctermbg=DarkGray
 
 " Grep plugin
 let Grep_Default_Options = '-C 5 -i'
+
+let g:YUNOcommit_after = 10
